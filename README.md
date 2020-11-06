@@ -1,14 +1,12 @@
 # LAB 3: EXPLORING SPATIAL DATA USING PYTHON
-Due: 6 November 2020
 
-The data for this lab can be found in the Lab 3 folder on the Course OneDrive. 
+This repo contains 5 scripts that explore properties of cities shapefile using arcpy functions.
 
-##  WHAT TO SUBMIT
-You will submit a file to your Github repo via Moodle. You will need to create your own `.py` files for the repo. *Be sure they all contain good comment headers!* Your repo should contain:
-- `Lab3_shape_exists.py` - Use in-line comments to explain what each line of code is doing.
-- `Lab3_describing_data` – these are single lines of code that you ran in the ArcPy window with comments that show the output of each line. 
-- `Lab3_list.py` – In the comment header, be sure to explain what the code is doing. Then use a block comment below the code to show your output. 
-- `Lab3_listcopy.py` - Add a description of what this script does to the comment header of your code. You should describe this in terms of outputs and inputs.
-- `Lab3_listfields.py` - In the comment header, be sure to explain what the code is doing. Then use a block comment below the code to show your output. 
+##  SCRIPTS
 
-There is no README required for this lab. However, a good README with documentation will help you re-use these scripts in the future and demonstrate your technical and documentation skills to potential employers. 
+- `Lab3_shape_exists.py` - This script checks a data folder on the local drive to determine if cities.shp exists in the folder. A boolean output is printed to tell the user if the shapefile exists. 
+- `Lab3_describing_data` – This script contains a series of single line codes that utilize the arcpy Describe function to display layer properties and information about shapefile of cities.
+- `Lab3_list.py` – Feature classes within a data folder on the local drive are assigned to a list and the name and data type of each feature class in the list is printed.
+- `Lab3_listcopy.py` - This code creates a geodatabase and copies all feature classes within a data folder on a local drive into the geodatabase using the basename of the copied feature classes.
+- `Lab3_listfields.py` - This code creates a list of fields from the cities shapefile attributes and prints the field name and field type.
+ 
